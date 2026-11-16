@@ -50,3 +50,26 @@ dialog{color:var(--brown)}
 @media(max-width:620px){
  .closing{background-image:linear-gradient(90deg,#f8f5ec40,#f8f5ecf5 16%,#f8f5ecfa 50%,#f8f5ecf5 84%,#f8f5ec40),url('assets/pistachio-white-chocolate-pattern.webp')}
 }
+/* Show the spread pattern clearly, with an ivory panel for readable copy. */
+.inspiration{
+ background-image:linear-gradient(#eee9d8c7,#eee9d8c7),url('assets/pistachio-white-chocolate-pattern.webp');
+ background-size:auto,900px 900px;
+}
+.closing{
+ padding-top:64px;
+ padding-bottom:64px;
+ background-image:url('assets/pistachio-white-chocolate-pattern.webp');
+ background-size:cover;
+ background-position:center;
+}
+.closing-content{
+ max-width:660px;
+ margin:0 auto;
+ padding:48px 24px;
+ background:#f8f5ecf5;
+}
+@media(max-width:620px){
+ .closing{padding:34px 6%;background-image:url('assets/pistachio-white-chocolate-pattern.webp')}
+ .closing-content{padding:36px 16px}
+ .closing h2{font-size:clamp(44px,12vw,62px)}
+}
