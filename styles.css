@@ -29,3 +29,24 @@ h1 em,h2 em{color:var(--brown)}
 .button-cream{color:var(--brown)}
 dialog{color:var(--brown)}
 .dialog-heading h2,.recipe-dialog h2{color:var(--green)}
+/* Pistachio spread and white chocolate artwork, derived from the supplied reference. */
+.inspiration{
+ background-color:#eee9d8;
+ background-image:linear-gradient(#eee9d8ed,#eee9d8ed),url('assets/pistachio-white-chocolate-pattern.webp');
+ background-size:auto,900px 900px;
+ background-repeat:repeat;
+}
+.closing{
+ background-color:var(--cream);
+ background-image:linear-gradient(90deg,#f8f5ec18 0%,#f8f5ecf5 26%,#f8f5ecfa 50%,#f8f5ecf5 74%,#f8f5ec18 100%),url('assets/pistachio-white-chocolate-pattern.webp');
+ background-size:cover;
+ background-position:center;
+ color:var(--brown);
+}
+.closing h2{color:var(--brown)}
+.closing h2 em,.closing-star{color:var(--green)}
+.closing .button-cream{background:var(--brown);color:var(--cream)}
+.closing .button-cream:hover{background:#7c4926}
+@media(max-width:620px){
+ .closing{background-image:linear-gradient(90deg,#f8f5ec40,#f8f5ecf5 16%,#f8f5ecfa 50%,#f8f5ecf5 84%,#f8f5ec40),url('assets/pistachio-white-chocolate-pattern.webp')}
+}
